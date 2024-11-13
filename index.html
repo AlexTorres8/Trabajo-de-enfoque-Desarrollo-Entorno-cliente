@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedacDent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logoMedacDent.jpg" alt="Logo Medac Dent" id="logo">
+        <h1>Gestión de Citas Médicas</h1>
+    </header>
+
+    <section>
+        <h2>Agregar Cita</h2>
+        <form id="appointmentForm">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="fechaCita">Fecha y Hora de la Cita</label>
+            <input type="datetime-local" id="fechaCita" name="fechaCita" required>
+
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" name="observaciones"></textarea>
+
+            <button type="submit">Guardar Cita</button>
+        </form>
+
+        <h2>Lista de Citas</h2>
+        <table id="appointmentsTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>DNI</th>
+                    <th>Teléfono</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Fecha y Hora de Cita</th>
+                    <th>Observaciones</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-empty>
+                    <td colspan="7">Dato vacío</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gestión de Citas MedacDent</p>
+        <p>Gmail: medacdent@gmail.com</p>
+        <p>Teléfono: 612345678</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
