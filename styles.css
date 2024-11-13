@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -7,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Cabecera */
 header {
     background-color: #4CAF50;
     color: white;
@@ -16,7 +14,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espacio entre el logo y el texto */
+    gap: 10px; 
 }
 
 #logo {
@@ -26,14 +24,13 @@ header {
 
 
 
-/* Sección principal */
 section {
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
 }
 
-/* Formulario de citas */
+
 form {
     background-color: white;
     padding: 20px;
@@ -64,9 +61,8 @@ textarea {
     border-radius: 4px;
 }
 
-/* Aumentamos la altura del campo de observaciones */
 textarea {
-    height: 100px;  /* Aumenta la altura del campo de observaciones */
+    height: 100px;  
 }
 
 button[type="submit"] {
@@ -84,11 +80,10 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Tabla de citas */
 #appointmentsTable {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* Asegura que las celdas no se desborden */
+    table-layout: fixed; 
 }
 
 #appointmentsTable thead {
@@ -101,13 +96,11 @@ button[type="submit"]:hover {
     text-align: left;
 }
 
-/* Contenedor de la tabla con scroll */
 #appointmentsTableWrapper {
-    max-height: 400px;   /* Establecer la altura máxima para que aparezca el scroll */
-    overflow-y: auto;    /* Habilitar el scroll vertical */
+    max-height: 400px;   
+    overflow-y: auto;    
 }
 
-/* Asegura que los encabezados de la tabla no se desplacen */
 #appointmentsTable thead {
     position: sticky;
     top: 0;
@@ -115,9 +108,8 @@ button[type="submit"]:hover {
     z-index: 1;
 }
 
-/* Estilos para el botón de modificar */
 button.edit-btn {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     padding: 8px 16px;
@@ -128,12 +120,11 @@ button.edit-btn {
 }
 
 button.edit-btn:hover {
-    background-color: #45a049; /* Verde más oscuro */
+    background-color: #45a049; 
 }
 
-/* Estilos para el botón de eliminar */
 button.delete-btn {
-    background-color: #f44336; /* Rojo */
+    background-color: #f44336; 
     color: white;
     border: none;
     padding: 8px 16px;
@@ -144,10 +135,9 @@ button.delete-btn {
 }
 
 button.delete-btn:hover {
-    background-color: #e53935; /* Rojo más oscuro */
+    background-color: #e53935; 
 }
 
-/* Pie de página */
 footer {
     background-color: #4CAF50;
     color: white;
